@@ -61,11 +61,11 @@ The pipeline processes raw sequencing reads, removes low-quality and host sequen
 
 ## Visual Outputs
 
-- 📌 Heatmaps of log2 fold change
-- 📌 PCA clustering of samples
-- 📌 Volcano plots showing significant species
-- 📌 Bar plots of top abundant taxa
-- 📌 Alpha diversity (Shannon Index)
+-  Heatmaps of log2 fold change
+-  PCA clustering of samples
+-  Volcano plots showing significant species
+-  Bar plots of top abundant taxa
+-  Alpha diversity (Shannon Index)
 
 ---
 
