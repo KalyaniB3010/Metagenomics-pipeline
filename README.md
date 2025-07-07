@@ -19,6 +19,7 @@ The pipeline processes raw sequencing reads, removes low-quality and host sequen
 
 - **10 Parkinson’s Disease samples + 10 Healthy controls**
 - Source: [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
+- Bioproject -  PRJNA834801
 
 ---
 
