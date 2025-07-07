@@ -3,20 +3,21 @@ project title - Pipeline development in metagenomics using shotgun sequencing
 
 # Shotgun Metagenomics Pipeline for Gut Microbiome Analysis
 
-This project focuses on the development and execution of a comprehensive **shotgun metagenomics analysis pipeline** to study microbial composition in **human gut microbiome samples** from **Tuberculosis (TB)** and **Parkinson's Disease (PD)** patients, compared with healthy controls.
+This project focuses on the development and implementation of a comprehensive **shotgun metagenomics analysis pipeline** to study microbial composition in **Parkinson's Disease (PD)** patients compared with healthy individuals.
+
+>  *An initial test was performed on 2 TB and 2 healthy samples, but the Parkinson’s case study was used for detailed analysis due to better sample size and results.*
 
 ---
 
-##  Project Overview
+## Project Overview
 
-The pipeline processes raw sequencing reads, removes low-quality and host sequences, classifies microbial species using **Kraken2**, refines abundance with **Bracken**, and performs **statistical and visual analysis** using Python. The project is part of my MSc Bioinformatics internship at **Bruhaspathi Institute of Biosciences**.
+The pipeline processes raw sequencing reads, removes low-quality and host sequences, classifies microbial species using **Kraken2**, refines abundance with **Bracken**, and performs **statistical and visual analysis** using Python. This project was completed as part of my MSc Bioinformatics internship at **Bruhaspathi Institute of Biosciences**.
 
 ---
 
-##  Datasets
+## Dataset
 
-- **Case 1:** 2 TB samples + 2 Healthy controls (Human gut microbiome)
-- **Case 2:** 10 Parkinson’s samples + 10 Healthy controls (Human gut microbiome)
+- **10 Parkinson’s Disease samples + 10 Healthy controls**
 - Source: [NCBI SRA](https://www.ncbi.nlm.nih.gov/sra)
 
 ---
@@ -51,41 +52,40 @@ The pipeline processes raw sequencing reads, removes low-quality and host sequen
 
 ---
 
-## Results Summary
+## Results Summary (PD vs Healthy)
 
-- **TB vs Healthy:** Enrichment of *Prevotella*, *Dialister*, and depletion of *Faecalibacterium* in TB samples.
-- **PD vs Healthy:** PD samples showed increase in *Salmonella enterica* and loss of SCFA-producing species.
-- PCA, volcano plots, and heatmaps confirmed clear separation between disease and control groups.
+- PD samples showed **increased abundance of pathogenic species** like *Salmonella enterica*
+- Several **SCFA-producing species were reduced** in PD (e.g., *Faecalibacterium prausnitzii*, *Blautia luti*)
+- PCA plots showed **clear separation** between PD and control groups
+- Volcano and heatmaps identified **statistically significant microbial shifts**
 
 ---
 
-## Visual Outputs
+##  Visual Outputs
 
--  Heatmaps of log2 fold change
--  PCA clustering of samples
--  Volcano plots showing significant species
--  Bar plots of top abundant taxa
--  Alpha diversity (Shannon Index)
+-  Heatmaps of log2 fold change  
+-  PCA clustering of samples  
+-  Volcano plots for significant species  
+-  Bar plots of top abundant microbes  
+-  Shannon Index (alpha diversity)
 
 ---
 
 ##  Future Enhancements
 
-- Add functional profiling (HUMAnN3)
-- Automate pipeline with Snakemake or bash scripting
-- Integrate ML-based prediction of disease state
-- Expand to larger datasets for statistical strength
+- Add functional profiling (e.g., HUMAnN3)
+- Test on larger datasets or additional disease models
+- Integrate ML-based classifiers for disease prediction
 
 ---
 
-##  Acknowledgments
+## Acknowledgments
 
 This project was completed as part of my MSc Bioinformatics internship at **Bruhaspathi Institute of Biosciences**.  
-Special thanks to my guide for continuous support and mentoring throughout the project.
+Special thanks to my guide for her constant support and guidance throughout the project.
 
 ---
 
 ## 🧾 License
 
-This project is for educational and research purposes only.
-
+This project is for academic and research purposes only.
